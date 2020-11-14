@@ -1,7 +1,7 @@
 {
   "name": "crud-profile-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "node assignment",
   "main": "index.js",
   "dependencies": {
     "cors": "^2.8.5",
@@ -12,6 +12,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Charlene Grant",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AffirmedVisionary/node-api-blackCodHer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AffirmedVisionary/node-api-blackCodHer/issues"
+  },
+  "homepage": "https://github.com/AffirmedVisionary/node-api-blackCodHer#readme"
 }
