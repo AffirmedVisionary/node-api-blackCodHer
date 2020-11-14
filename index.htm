@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Black CodHer API Page</title>
+  <meta name="description" content="API Welcome Page">
+  <meta name="author" content="Charlene Grant for cbf">
+  <style type="text/css">
+    html{
+      background-color: #000;
+      color:#fff;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size:1.4em;
+      text-align: center;
+    }   
+    .container{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    img{
+        max-width:150px;
+    }
+    ol li h2{
+      font-size: 1.0em;
+      margin-bottom:0px;
+    }
+    li p{
+      margin-top:0px;
+    }
+    a, a:visited  {
+      color: #ffcc66;
+      text-decoration: none;
+    }
+    h2 span{
+      display: inline-block;
+      padding-right: 5px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .done:before{
+      content: '\2713';
+      color:green;
+    }
+    .todo:before{
+      content: '\2717';
+      color:#cc0000;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Welcome to Affirmed Visionary's API</h1>
+    <p>This page contains some simple ways to get information from a profile file store.</p>
+    <img src="/myWatermark.png" alt="Affirmed Visionary Logo"/>
+      <ol style="text-align:initial">
+        <li>
+          <h2><span class="done"></span><span class="get">GET</span><a href="./">/</a></h2>
+          <p>Returns this homepage.</p>
+        </li>
+        <li>
+          <h2><span class="done"></span><span class="get">GET</span><a href="./api/profiles">/api/profiles</a></h2>
+          <p>Returns a list of all profiles in profile.json file.</p>
+        </li>
+        <li>
+          <h2><span class="done"></span><span>GET</span><a href="./api/profiles/1">/api/profiles/:id</a></h2>
+          <p>Returns a single profile based on the id value. Id is an integer between 1 - 4.</p>
+        </li>
+        <li>
+          <h2><span class="done"></span><span class="post">POST</span><a href="./api/profiles">/api/profiles</a></h2>
+          <p>Post a new profile JSON object to server. Will display the list of profiles with the new profile appended.
+            <br/>
+            Profile must be valid JSON object,e.g:<br/>
+            {firstname: "jessica", lastname "jones"}<br/><br/>
+            <em>N.B. Will need an API tester such as Postman to check POST request.</em>
+          </p>
+        </li>
+        <li>
+          <h2><span class="done"></span><span class="put">PUT</span><a href="./api/profiles">/api/profiles/:id</a></h2>
+          <p>Replaces an existing profile object. Will display the list of profiles including the changed object.
+            <br/>
+            Profile must be valid JSON object,e.g:<br/>
+            {firstname: "jessica", lastname "jones"}<br/><br/>
+            <em>N.B. Will need an API tester such as Postman to check PUT request.</em>
+          </p>
+        </li>
+        <li>
+          <h2><span class="done"></span><span class="patch">PATCH</span><a href="./api/profiles">/api/profiles/:id</a></h2>
+          <p>Updates an existing profile object. Will display the list of profiles including the updated object. Ignores new object attributes.
+            <br/>
+            Profile must be valid JSON object,e.g:<br/>
+            {firstname: "jessica", lastname "jones"}<br/><br/>
+            <em>N.B. Will need an API tester such as Postman to check PATCH request.</em>
+          </p>
+        </li>
+        <li>
+          <h2><span class="done"></span><span class="delete">DELETE</span><a href="./api/profiles">/api/profiles/:id</a></h2>
+          <p>Delete profile by Id.
+            <br/><br/>
+            <em>N.B. Will need an API tester such as Postman to check DELETE request.</em>
+          </p>
+        </li>
+      </ol>
+  </div>
+  </body>
+</html>
+
